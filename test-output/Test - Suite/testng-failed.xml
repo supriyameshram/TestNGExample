@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test - Suite]" parallel="tests">
+  <test thread-count="5" name="IEText(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="automationFramework.MultiBrowser">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- automationFramework.MultiBrowser -->
+    </classes>
+  </test> <!-- IEText(failed) -->
+  <test thread-count="5" name="Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="automationFramework.MultiBrowser">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- automationFramework.MultiBrowser -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Test - Suite] -->
